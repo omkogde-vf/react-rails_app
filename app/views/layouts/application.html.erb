@@ -1,0 +1,29 @@
+<!-- app/views/layouts/application.html.erb -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Library Management App</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
+
+  <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+  <%= javascript_importmap_tags %>
+  <h1>Welcome to My Library</h1>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+      <% if user_signed_in? %>
+      <li><%= link_to 'Home', authenticated_root_path %></li>
+    <% end %>
+      </ul>
+    </nav>
+  </header>
+  <%= yield %>
+  <footer>
+    <!-- Your footer content -->
+  </footer>
+</body>
+</html>
