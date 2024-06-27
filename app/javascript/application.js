@@ -3,4 +3,5 @@ import "@hotwired/turbo-rails"
 import "controllers"
 // app/javascript/packs/application.js
 
-import '../stylesheets/books.css';
+
+
