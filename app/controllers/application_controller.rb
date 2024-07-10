@@ -1,5 +1,6 @@
 # app/controllers/application_controller.rb
 
-class ApplicationController < ActionController::Base
-  end
+class ApplicationController < ActionController::API
+end
+
   
